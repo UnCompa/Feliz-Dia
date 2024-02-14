@@ -73,11 +73,11 @@ audio::-webkit-media-controls-panel {
     background: #000;
 }
 img {
-    background: #000;
+    background: #fff;
     border-radius: 5px;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     animation: flip-in-ver-left .8s cubic-bezier(.25,.46,.45,.94) both
 }
 .imgs-container {
@@ -99,7 +99,7 @@ img {
 }
 .modal-img {
     padding: 1em;
-    height: 80%;
+    height: 50%;
 }
 .content {
     padding: 1em;
@@ -134,7 +134,7 @@ img {
     }
 }
 .modal {
-    height: 60vh;
+    height: 70vh;
     width: 80vw;
     background: #FFF0D9;
     box-shadow: 0px 10px 15px #0008;
@@ -189,16 +189,6 @@ span {
     padding: 1em;
 }
 
-.videos-container {
-    height: 100%;
-    width: 80vw;
-    margin: auto;
-    background: #fff;
-    padding: .5em;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-}
 
 .videos {
     width: 120px;
@@ -210,7 +200,18 @@ video {
     height: 100%;
     width: 250px;
 }
-
+.videos-container {
+    height: 100%;
+    width: 85vw;
+    margin: 1em auto;
+    background: #fff;
+    padding: .6em;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
 .counter {
     background: #fff;
     height: 100px;
@@ -284,14 +285,4 @@ video {
     .modal-img {
         height: 40%;
     }
-    .videos-container {
-    height: 100%;
-    width: 80vw;
-    margin: auto;
-    background: #FEFFD7;
-    padding: .5em;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-}
 }
